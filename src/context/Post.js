@@ -7,7 +7,7 @@ function PostProvider({children}){
     const [posts,setPosts]=useState([])
     const [isLoggedIn, setIsLoggedIn] = useState(false)
 
-    
+
     useEffect(()=>{
         fetch(`http://localhost:3000/articles`)
         .then((r)=>r.json())
@@ -15,11 +15,13 @@ function PostProvider({children}){
     },[])
 
 
+    
 // Add Post Function
     function addPost(postObj){
         setPosts([...posts,postObj])
     }
-   
+
+    
 // Delete Post Function
     function deletePost(id){
         setPosts((prevValue)=>{
