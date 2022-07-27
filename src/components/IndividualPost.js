@@ -11,7 +11,7 @@ function IndividualPost({post}){
 
 //Handles Deleting a post
     function handleDelete(){
-        fetch(`http://localhost:3000/articles/${id}`,{
+        fetch(`https://buzzdb.herokuapp.com/articles/${id}`,{
             method:'DELETE',
         })
         .then((r)=>r.json)

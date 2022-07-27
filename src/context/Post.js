@@ -9,13 +9,13 @@ function PostProvider({children}){
 
 
     useEffect(()=>{
-        fetch(`http://localhost:3000/articles`)
+        fetch(`https://buzzdb.herokuapp.com/articles`)
         .then((r)=>r.json())
         .then((data)=>setPosts(data))
     },[])
 
 
-    
+
 // Add Post Function
     function addPost(postObj){
         setPosts([...posts,postObj])

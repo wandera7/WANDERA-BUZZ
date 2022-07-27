@@ -5,7 +5,7 @@ function ReadMore(){
     const[post,setPost]=useState({})
     const params = useParams()
     useEffect(()=>{
-        fetch(`http://localhost:3000/articles/${params.id}`)
+        fetch(`https://buzzdb.herokuapp.com/articles/${params.id}`)
         .then((r)=>r.json())
         .then((data)=>setPost(data))
     },[params.id])
