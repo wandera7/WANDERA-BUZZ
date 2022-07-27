@@ -6,14 +6,16 @@ import { PostContext } from "../context/Post";
 
 
 function Compose (){
-    
+
     const [newData,setData]=useState({
         title:"",
         content:" ",
         img:" ",
         author:" "
     })
+    
     const {addPost,isLoggedIn}=useContext(PostContext)
+
 //Handles onChange event listener
     function handleChange(e){
         setData({...newData,[e.target.name]:e.target.value})
