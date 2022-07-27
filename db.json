@@ -1,0 +1,25 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Example Article",
+      "content": "Henry Ohanga, commonly referred to by his stage name Octopizzo is an award winning, recording and perfoming artist, humanitarian and an entrepreneur. Born in the sprawling slums of Kibera, Nairobi (considered one of the largest slums in the world), he purposed to earnestly pursue his career in music. Octopizzo currently has three albums named “Chocolate City”, “LDPC” which took the Number 1 spot on iTunes on its first week of release and “Refugeenius” which he collaborated with over 20 Refugees from Kakuma & Dadaab Refugee camps.",
+      "img": "https://techmoran.com/wp-content/uploads/2020/11/octopizzo-1-1200x700-1.jpg",
+      "author": "Octopizzo"
+    },
+    {
+      "id": 2,
+      "title": "Second Article",
+      "content": "This is also an example.",
+      "img": "https://parade.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTkwNTgxMDkzMDQ3Njc0NzQ4/jayz.jpg",
+      "author": "Jungle Fever"
+    },
+    {
+      "title": "Khaligraph Jones",
+      "content": " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+      "img": "https://mdundo.com/media/picture/152_P47RHGM8oA1iHTBb9FsXTfdHC24a_b.jpg ",
+      "author": " L.rock",
+      "id": 3
+    }
+  ]
+}
