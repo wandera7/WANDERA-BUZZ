@@ -3,7 +3,9 @@ import { Redirect } from "react-router-dom";
 import { PostContext } from "../context/Post";
 function About( ){
     const {isLoggedIn}=useContext(PostContext)
+    
      if (!isLoggedIn) return <Redirect to="/login" />
+
     return(
         <>
         <h1  className="text" >About Page</h1>

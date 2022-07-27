@@ -6,6 +6,7 @@ import { PostContext } from "../context/Post";
 
 
 function Compose (){
+    
     const [newData,setData]=useState({
         title:"",
         content:" ",
