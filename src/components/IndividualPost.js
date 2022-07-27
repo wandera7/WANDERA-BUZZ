@@ -1,11 +1,14 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import { PostContext } from "../context/Post";      
+import { PostContext } from "../context/Post"; 
+
 function IndividualPost({post}){
     const {deletePost}=useContext(PostContext)
     const { id,title,content,img,author}=post
     const newContent=content.slice(0,30)
+
     
+
 //Handles Deleting a post
     function handleDelete(){
         fetch(`http://localhost:3000/articles/${id}`,{
