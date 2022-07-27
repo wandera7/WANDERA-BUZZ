@@ -3,16 +3,18 @@ import React, { createContext, useEffect, useState } from "react";
 const PostContext=createContext()
 
 function PostProvider({children}){
+
     const [posts,setPosts]=useState([])
     const [isLoggedIn, setIsLoggedIn] = useState(false)
 
+    
     useEffect(()=>{
         fetch(`http://localhost:3000/articles`)
         .then((r)=>r.json())
         .then((data)=>setPosts(data))
     },[])
 
-    
+
 // Add Post Function
     function addPost(postObj){
         setPosts([...posts,postObj])
