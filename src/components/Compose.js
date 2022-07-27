@@ -13,13 +13,16 @@ function Compose (){
         img:" ",
         author:" "
     })
-    
+
     const {addPost,isLoggedIn}=useContext(PostContext)
 
+    
 //Handles onChange event listener
     function handleChange(e){
         setData({...newData,[e.target.name]:e.target.value})
     }
+
+
 //Handles Form Submit
     function handleSubmit(e){
         e.preventDefault()
