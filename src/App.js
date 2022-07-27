@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React ,{useState} from "react";
+import LoginForm from "./components/Login";
+import NavBar from "./components/NavBar";
+import { Route, Switch } from "react-router-dom";
+import About from "./components/About";
+import Compose from "./components/Compose";
+import Home from "./components/Home";
+import ReadMore from "./components/ReadMore";
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <NavBar />
+    <Switch>
+        <Route exact path="/login">
+        <LoginForm  setIsLoggedIn={setIsLoggedIn} />   
+        </Route>
+        <Route exact path="/about">
+        <About  isLoggedIn={isLoggedIn} />    
+        </Route>
+        <Route exact path="/compose">
+        <Compose isLoggedIn={isLoggedIn}  />   
+        </Route>
+        <Route  exact path="/">
+        <Home isLoggedIn={isLoggedIn}  />  
+        </Route>
+        <Route exact path={`/articles/:id`}>
+        <ReadMore  />
+      </Route>
+      </Switch>
+    </>
   );
 }
 
