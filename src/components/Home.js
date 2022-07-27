@@ -4,6 +4,8 @@ import { PostContext } from "../context/Post";
 import IndividualPost from "./IndividualPost";
 
 function Home(){
+
+  
     const {posts,isLoggedIn}=useContext(PostContext)
     if (!isLoggedIn) return <Redirect to="/login" />;
     return (
