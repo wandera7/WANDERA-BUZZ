@@ -12,12 +12,13 @@ function LoginForm() {
         password:''
     })
 
+    
     //Handles change in form
     function handleChange(e){
         setLogInForm({...LoginForm,[e.target.name]:e.target.value})
     }
 
-    
+
     //Handles submitting login
     function handleSubmit(e){
         e.preventDefault()
@@ -25,6 +26,8 @@ function LoginForm() {
         history.push("/")
         setLogInForm()
     }
+
+
    return (
     <div>
     <div className="loginnav">
