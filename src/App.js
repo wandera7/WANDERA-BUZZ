@@ -21,10 +21,10 @@ function App() {
         <About  isLoggedIn={isLoggedIn} />    
         </Route>
         <Route exact path="/compose">
-        <Compose isLoggedIn={isLoggedIn}  />   
+        <Compose  />   
         </Route>
         <Route  exact path="/">
-        <Home isLoggedIn={isLoggedIn}  />  
+        <Home   />  
         </Route>
         <Route exact path={`/articles/:id`}>
         <ReadMore  />
