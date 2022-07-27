@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { NavLink,useHistory,Redirect } from "react-router-dom";
 import { PostContext } from "../context/Post";
 
+
 //Styles navbar links
 const linkStyles = {
     float:" right",
@@ -13,6 +14,8 @@ const linkStyles = {
     letterSpacing: "7px", 
     top: '0',
 }
+
+
 // Styles Logo
 const logoStyle={
   float:"left",
