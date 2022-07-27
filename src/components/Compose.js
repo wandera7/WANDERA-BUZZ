@@ -16,7 +16,7 @@ function Compose (){
 
     const {addPost,isLoggedIn}=useContext(PostContext)
 
-    
+
 //Handles onChange event listener
     function handleChange(e){
         setData({...newData,[e.target.name]:e.target.value})
@@ -26,7 +26,7 @@ function Compose (){
 //Handles Form Submit
     function handleSubmit(e){
         e.preventDefault()
-        fetch('http://localhost:3000/articles',{
+        fetch('https://buzzdb.herokuapp.com/articles',{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'},
