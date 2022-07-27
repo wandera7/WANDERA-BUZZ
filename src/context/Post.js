@@ -12,12 +12,12 @@ function PostProvider({children}){
         .then((data)=>setPosts(data))
     },[])
 
+    
 // Add Post Function
     function addPost(postObj){
         setPosts([...posts,postObj])
     }
-
-    
+   
 // Delete Post Function
     function deletePost(id){
         setPosts((prevValue)=>{
