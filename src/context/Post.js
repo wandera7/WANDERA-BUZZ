@@ -11,6 +11,7 @@ function PostProvider({children}){
         .then((r)=>r.json())
         .then((data)=>setPosts(data))
     },[])
+
 // Add Post Function
     function addPost(postObj){
         setPosts([...posts,postObj])
