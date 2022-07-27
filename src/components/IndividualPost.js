@@ -5,6 +5,7 @@ function IndividualPost({post}){
     const {deletePost}=useContext(PostContext)
     const { id,title,content,img,author}=post
     const newContent=content.slice(0,30)
+    
 //Handles Deleting a post
     function handleDelete(){
         fetch(`http://localhost:3000/articles/${id}`,{
@@ -13,6 +14,7 @@ function IndividualPost({post}){
         .then((r)=>r.json)
         .then(()=>deletePost(id))
     }
+
 
     return(
         <div className="card">
