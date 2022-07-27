@@ -15,7 +15,7 @@ function App() {
     <NavBar />
     <Switch>
         <Route exact path="/login">
-        <LoginForm  setIsLoggedIn={setIsLoggedIn} />   
+        <LoginForm  />   
         </Route>
         <Route exact path="/about">
         <About  />    
