@@ -8,7 +8,6 @@ import Home from "./components/Home";
 import ReadMore from "./components/ReadMore";
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
   
   return (
     <>
