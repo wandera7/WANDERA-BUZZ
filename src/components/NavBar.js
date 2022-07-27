@@ -31,6 +31,7 @@ const logoStyle={
 
 
 function NavBar() {
+
   const history = useHistory()
   const {isLoggedIn,setIsLoggedIn}=useContext(PostContext)
   if (!isLoggedIn) return <Redirect to="/login" />
