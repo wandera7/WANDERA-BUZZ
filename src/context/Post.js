@@ -16,6 +16,8 @@ function PostProvider({children}){
     function addPost(postObj){
         setPosts([...posts,postObj])
     }
+
+    
 // Delete Post Function
     function deletePost(id){
         setPosts((prevValue)=>{
