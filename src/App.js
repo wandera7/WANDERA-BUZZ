@@ -18,7 +18,7 @@ function App() {
         <LoginForm  setIsLoggedIn={setIsLoggedIn} />   
         </Route>
         <Route exact path="/about">
-        <About  isLoggedIn={isLoggedIn} />    
+        <About  />    
         </Route>
         <Route exact path="/compose">
         <Compose  />   
