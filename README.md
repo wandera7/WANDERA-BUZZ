@@ -1,14 +1,14 @@
 # WANDERA BUZZ
 
--AUTHOR: JULIUS WANDERA
+- AUTHOR: JULIUS WANDERA
 
 ## Description
--WANDERA BUZZ, is  a single page web app , that can be used to write articles.
--You can delete a post , compose a new one and view more about a particular post.
--I hope you'll love it.
+- WANDERA BUZZ, is  a single page web app , that can be used to write articles.
+- You can delete a post , compose a new one and view more about a particular post.
+- I hope you'll love it.
 
 ## Link
--Click the link below to visit WANDERABUZZ
+- Click the link below to visit WANDERABUZZ
 >https://willowy-alpaca-4bd37c.netlify.app/
 
 ## Technologies
